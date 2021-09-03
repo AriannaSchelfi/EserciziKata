@@ -19,10 +19,8 @@ class StringCalculator {
     }
 
     private fun numeri(stringa: String): List<Int> {
-        val delimiter1 = ","
-        val delimiter2 = "\n"
 
-        return estraiStringaPulita(stringa).split(delimiter1, delimiter2, estraiDelimitatore(stringa))
+        return estraiStringaPulita(stringa).split(*estraiDelimitatori(stringa).toTypedArray())
             .map { it.toInt() }
             .filter { it <= 1000 }
     }
@@ -38,15 +36,17 @@ class StringCalculator {
         return stringaPulita
     }
 
-    private fun estraiDelimitatore(stringa: String): String {
-        val delimiter3 = if (stringa.startsWith("//[")) {
-            stringa.substring(3, stringa.indexOf('\n') - 1)
+    private fun estraiDelimitatori(stringa: String): List<String> {
+
+        val delimitatori = if (stringa.startsWith("//[")) {
+            stringa.substring(3, stringa.indexOf('\n') - 1).split("][")
         } else if (stringa.startsWith("//")) {
-            stringa[2].toString()
+            listOf(stringa[2].toString())
         } else {
-            " "
+            listOf(" ")
         }
-        return delimiter3
+
+        return listOf(",", "\n") + delimitatori
     }
 
     private fun numeriNegativi(numeri: List<Int>): List<Int> {

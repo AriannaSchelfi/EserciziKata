@@ -109,4 +109,13 @@ class StringCalculatorTest{
 
         assertEquals(6,result)
     }
+
+    @Test
+    fun tanti_delimitatori() {
+        val calculator = StringCalculator()
+
+        val result = calculator.add("//[**][;]\n1**2;3,4")
+
+        assertEquals(10, result)
+    }
 }
