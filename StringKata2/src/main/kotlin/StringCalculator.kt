@@ -9,9 +9,7 @@ class StringCalculator {
         }
         val numeri = numeri(stringa)
 
-
-
-        val numeriNegativi: MutableList<Int> = numeriNegativi(numeri)
+        val numeriNegativi= numeriNegativi(numeri)
 
         if (numeriNegativiPresenti(numeriNegativi)) {
             throw Exception("Numeri negativi non permessi, presenti %s".format(numeriNegativi.toString()))
@@ -24,41 +22,44 @@ class StringCalculator {
         val delimiter1 = ","
         val delimiter2 = "\n"
 
-        var delimiter3 = " "
-        var stringaPulita: String
-        if (stringa.startsWith("//[")) {
-            delimiter3 = stringa.substring(3,stringa.indexOf('\n')-1)
-            stringaPulita = stringa.substring(stringa.indexOf("\n")+1)
-
-        }else if (stringa.startsWith("//")){
-            delimiter3 = stringa[2].toString()
-            stringaPulita = stringa.substring(4)
-        }
-        else {
-            stringaPulita = stringa
-        }
-        val numeri = stringaPulita.split(delimiter1, delimiter2, delimiter3)
-                    .map { it.toInt() }
-                    .filter{it<=1000}
-
-        return numeri
+        return estraiStringaPulita(stringa).split(delimiter1, delimiter2, estraiDelimitatore(stringa))
+            .map { it.toInt() }
+            .filter { it <= 1000 }
     }
 
-    private fun numeriNegativi(numeri: List<Int>): MutableList<Int> {
-        val numeriNegativi: MutableList<Int> = ArrayList()
-        for (num in numeri) {
-            if (num < 0) {
-                numeriNegativi.add(num)
-            }
+    private fun estraiStringaPulita(stringa: String): String {
+        val stringaPulita: String = if (stringa.startsWith("//[")) {
+            stringa.substring(stringa.indexOf("\n") + 1)
+        } else if (stringa.startsWith("//")) {
+            stringa.substring(4)
+        } else {
+            stringa
         }
-        return numeriNegativi
+        return stringaPulita
     }
 
-    private fun numeriNegativiPresenti(numeriNegativi: MutableList<Int>) =
+    private fun estraiDelimitatore(stringa: String): String {
+        val delimiter3 = if (stringa.startsWith("//[")) {
+            stringa.substring(3, stringa.indexOf('\n') - 1)
+        } else if (stringa.startsWith("//")) {
+            stringa[2].toString()
+        } else {
+            " "
+        }
+        return delimiter3
+    }
+
+    private fun numeriNegativi(numeri: List<Int>): List<Int> {
+        return numeri.filter{ it<0}
+    }
+
+    private fun numeriNegativiPresenti(numeriNegativi: List<Int>) =
         numeriNegativi.isNotEmpty()
 
     fun getCalledCount(): Int {
         return counter
     }
+
+
 
 }
