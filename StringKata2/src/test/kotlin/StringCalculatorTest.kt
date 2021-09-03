@@ -100,4 +100,13 @@ class StringCalculatorTest{
 
         assertEquals(9,result)
     }
+
+    @Test
+    fun delimitatori_lunghi_piu_di_un_carattere() {
+        val calculator = StringCalculator()
+
+        val result = calculator.add("//[***]\n1***2***3")
+
+        assertEquals(6,result)
+    }
 }

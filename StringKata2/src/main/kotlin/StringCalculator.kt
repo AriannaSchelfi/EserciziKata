@@ -26,10 +26,15 @@ class StringCalculator {
 
         var delimiter3 = " "
         var stringaPulita: String
-        if (stringa.startsWith("//")) {
+        if (stringa.startsWith("//[")) {
+            delimiter3 = stringa.substring(3,stringa.indexOf('\n')-1)
+            stringaPulita = stringa.substring(stringa.indexOf("\n")+1)
+
+        }else if (stringa.startsWith("//")){
             delimiter3 = stringa[2].toString()
             stringaPulita = stringa.substring(4)
-        } else {
+        }
+        else {
             stringaPulita = stringa
         }
         val numeri = stringaPulita.split(delimiter1, delimiter2, delimiter3)
