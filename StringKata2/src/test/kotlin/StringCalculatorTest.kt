@@ -49,9 +49,8 @@ class StringCalculatorTest{
     fun numero_negativo() {
         val calculator = StringCalculator();
         try {
-            val result = calculator.add("//;\n23;-5,4")
+            calculator.add("//;\n23;-5,4")
         } catch (e : Exception ) {
-            //System.err.println(e.message)
             assertEquals("Numeri negativi non permessi, presenti [-5]", e.message)
         }
     }
@@ -60,7 +59,7 @@ class StringCalculatorTest{
     fun tanti_numeri_negativi() {
         val calculator = StringCalculator()
         try{
-            val result = calculator.add("//;\n23;-5,4\n-6,5,-8")
+            calculator.add("//;\n23;-5,4\n-6,5,-8")
         }
         catch(e : Exception){
             assertEquals("Numeri negativi non permessi, presenti [-5, -6, -8]", e.message)
@@ -75,19 +74,11 @@ class StringCalculatorTest{
     }
 
     @Test
-    fun funzione_getCalledCount_una_chiamata() {
-        val calculator = StringCalculator()
-        val result = calculator.add("1,2,3")
-        val numeroChiamate = calculator.getCalledCount()
-        assertEquals(1, numeroChiamate)
-    }
-
-    @Test
     fun funzione_getCalledCount_tante_chiamate() {
         val calculator = StringCalculator()
-        val result1 = calculator.add("1,2,3")
-        val result2 = calculator.add("//;\n1;2\n3,4")
-        val result3 = calculator.add("1\n45,3")
+        calculator.add("1,2,3")
+        calculator.add("//;\n1;2\n3,4")
+        calculator.add("1\n45,3")
         val numeroChiamate = calculator.getCalledCount()
         assertEquals(3,numeroChiamate)
     }
