@@ -46,13 +46,6 @@ class StringCalculatorTest{
     }
 
     @Test
-    fun altri_separatori_prova_due() {
-        val calculator = StringCalculator();
-        val result = calculator.add("//)\n45)12,8\n5)40")
-        assertEquals(110,result)
-    }
-
-    @Test
     fun numero_negativo() {
         val calculator = StringCalculator();
         try {
@@ -97,5 +90,14 @@ class StringCalculatorTest{
         val result3 = calculator.add("1\n45,3")
         val numeroChiamate = calculator.getCalledCount()
         assertEquals(3,numeroChiamate)
+    }
+
+    @Test
+    fun ignorare_numeri_maggiori_di_mille() {
+        val calculator = StringCalculator()
+
+        val result = calculator.add("1003,4,5,1001")
+
+        assertEquals(9,result)
     }
 }

@@ -9,6 +9,8 @@ class StringCalculator {
         }
         val numeri = numeri(stringa)
 
+
+
         val numeriNegativi: MutableList<Int> = numeriNegativi(numeri)
 
         if (numeriNegativiPresenti(numeriNegativi)) {
@@ -30,7 +32,10 @@ class StringCalculator {
         } else {
             stringaPulita = stringa
         }
-        val numeri = stringaPulita.split(delimiter1, delimiter2, delimiter3).map { it.toInt() }
+        val numeri = stringaPulita.split(delimiter1, delimiter2, delimiter3)
+                    .map { it.toInt() }
+                    .filter{it<=1000}
+
         return numeri
     }
 
