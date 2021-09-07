@@ -45,7 +45,6 @@ class Game (private var namePlayer1: String, private var namePlayer2: String){
             3 -> "forty"
             else -> "errore"
         }
-
     }
 
     fun newPoint(giocatore: String) {

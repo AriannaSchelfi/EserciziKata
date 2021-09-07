@@ -38,12 +38,13 @@ class GameTest{
     @Test
     fun advantageGiocatore1() {
         val gioco = Game("Nadal", "Djokovic")
-        for(i in 0..3){
+        for(i in 0..2){
             gioco.newPoint("Nadal")
         }
         for(i in 0..2) {
             gioco.newPoint("Djokovic")
         }
+        gioco.newPoint("Nadal")
         assertEquals("advantage Nadal", gioco.getScore())
     }
 
@@ -62,12 +63,14 @@ class GameTest{
     @Test
     fun deucePerPareggioDopoTrePunti() {
         val gioco = Game("Nadal", "Djokovic")
-        for(i in 0..4){
+        for(i in 0..2){
             gioco.newPoint("Nadal")
         }
-        for(i in 0..4){
+        for(i in 0..2){
             gioco.newPoint("Djokovic")
         }
+        gioco.newPoint("Nadal")
+        gioco.newPoint("Djokovic")
         assertEquals("deuce", gioco.getScore())
     }
 
