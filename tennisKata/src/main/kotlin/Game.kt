@@ -1,11 +1,14 @@
 class Game (private var namePlayer1: String, private var namePlayer2: String){
     private var scorePlayer1 : Int = 0
     private var scorePlayer2 : Int = 0
+    private var partitaConclusa : Boolean = false
 
     fun getScore() : String{
         return if (scorePlayer1==4 && scorePlayer2<3){
+            partitaConclusa = true
             "$namePlayer1 win!"
         } else if (scorePlayer1<3 && scorePlayer2==4){
+            partitaConclusa = true
             "$namePlayer2 win!"
         } else if(scorePlayer1>=3 && scorePlayer2>=3){
             vantaggi()
@@ -30,6 +33,7 @@ class Game (private var namePlayer1: String, private var namePlayer2: String){
     }
 
     private fun vittoria(): String {
+        partitaConclusa= true
         return if (scorePlayer1 > scorePlayer2) {
             "$namePlayer1 win!"
         } else {
@@ -48,10 +52,15 @@ class Game (private var namePlayer1: String, private var namePlayer2: String){
     }
 
     fun newPoint(giocatore: String) {
-        if (giocatore == namePlayer1) {
-            scorePlayer1++
-        } else{
-            scorePlayer2++
+        if(partitaConclusa){
+            throw Exception("La partita è conclusa!")
+        }
+        else {
+            if (giocatore == namePlayer1) {
+                scorePlayer1++
+            } else {
+                scorePlayer2++
+            }
         }
     }
 }

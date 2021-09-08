@@ -94,4 +94,43 @@ class GameTest{
         }
         assertEquals("Djokovic win!", gioco.getScore())
     }
+
+    @Test
+    fun puntoDopoVittoriaLanciaEccezzione() {
+        val gioco = Game("Nadal", "Djokovic")
+        for(i in 0..3){
+            gioco.newPoint("Nadal")
+        }
+        try {
+            gioco.newPoint("Djokovic")
+        } catch(e : Exception){
+            assertEquals("La partita è conclusa",e.message)
+        }
+    }
+
+    @Test
+    fun partitaCompleta() {
+        val gioco = Game("Nadal", "Djokovic")
+        gioco.newPoint("Djokovic")
+        assertEquals("Nadal : love - Djokovic : fifteen", gioco.getScore())
+        gioco.newPoint("Nadal")
+        assertEquals("Nadal : fifteen - Djokovic : fifteen", gioco.getScore())
+        gioco.newPoint("Djokovic")
+        assertEquals("Nadal : fifteen - Djokovic : thirty", gioco.getScore())
+        gioco.newPoint("Nadal")
+        assertEquals("Nadal : thirty - Djokovic : thirty", gioco.getScore())
+        gioco.newPoint("Djokovic")
+        assertEquals("Nadal : thirty - Djokovic : forty", gioco.getScore())
+        gioco.newPoint("Nadal")
+        assertEquals("deuce", gioco.getScore())
+        gioco.newPoint("Djokovic")
+        assertEquals("advantage Djokovic", gioco.getScore())
+        gioco.newPoint("Nadal")
+        assertEquals("deuce", gioco.getScore())
+        gioco.newPoint("Djokovic")
+        assertEquals("advantage Djokovic", gioco.getScore())
+        gioco.newPoint("Djokovic")
+        assertEquals("Djokovic win!", gioco.getScore())
+
+    }
 }
