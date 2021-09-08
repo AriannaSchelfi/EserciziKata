@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d4d4ee2-1d04-4497-b1a7-09c2d0f84c43" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1xrFmKY4IvKRcR4hC1tGgWfzaAM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MastermindTest">
+    <configuration name="MastermindTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mainModule" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MastermindTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MastermindTest.sequenzeDiLunghezzeDiverseOttengoEccezzione" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mainModule" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MastermindTest" />
+      <option name="METHOD_NAME" value="sequenzeDiLunghezzeDiverseOttengoEccezzione" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MastermindTest.sequenzeLunghezzaMaggioreDiUnoConMissplacedEWellplaced" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mainModule" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MastermindTest" />
+      <option name="METHOD_NAME" value="sequenzeLunghezzaMaggioreDiUnoConMissplacedEWellplaced" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MastermindTest.sequenzeLunghezzaMaggioreDiUnoConSoloMissplaced" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mainModule" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MastermindTest" />
+      <option name="METHOD_NAME" value="sequenzeLunghezzaMaggioreDiUnoConSoloMissplaced" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MastermindTest" />
+        <item itemvalue="JUnit.MastermindTest.sequenzeLunghezzaMaggioreDiUnoConMissplacedEWellplaced" />
+        <item itemvalue="JUnit.MastermindTest.sequenzeLunghezzaMaggioreDiUnoConSoloMissplaced" />
+        <item itemvalue="JUnit.MastermindTest.sequenzeDiLunghezzeDiverseOttengoEccezzione" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d4d4ee2-1d04-4497-b1a7-09c2d0f84c43" name="Changes" comment="" />
+      <created>1631105460303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631105460303</updated>
+    </task>
+    <servers />
+  </component>
+</project>
