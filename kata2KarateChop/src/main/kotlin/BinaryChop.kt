@@ -1,3 +1,4 @@
+//http://codekata.com/kata/kata02-karate-chop/
 class BinaryChop {
 
     fun binarySearch(number : Int, orderedArray : IntArray, start :Int = 0) : Int{
