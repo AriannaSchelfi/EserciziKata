@@ -15,6 +15,7 @@
       <list>
         <option value="Kotlin Class" />
         <option value="JUnit4 Test Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -30,8 +31,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -43,7 +45,7 @@
   </component>
   <component name="RunManager" selected="JUnit.MastermindTest">
     <configuration name="MastermindTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mainModule" />
+      <module name="module name" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MastermindTest" />
       <option name="TEST_OBJECT" value="class" />
@@ -52,7 +54,7 @@
       </method>
     </configuration>
     <configuration name="MastermindTest.sequenzeDiLunghezzeDiverseOttengoEccezzione" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mainModule" />
+      <module name="module name" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MastermindTest" />
       <option name="METHOD_NAME" value="sequenzeDiLunghezzeDiverseOttengoEccezzione" />
@@ -62,7 +64,7 @@
       </method>
     </configuration>
     <configuration name="MastermindTest.sequenzeLunghezzaMaggioreDiUnoConMissplacedEWellplaced" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mainModule" />
+      <module name="module name" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MastermindTest" />
       <option name="METHOD_NAME" value="sequenzeLunghezzaMaggioreDiUnoConMissplacedEWellplaced" />
@@ -72,11 +74,24 @@
       </method>
     </configuration>
     <configuration name="MastermindTest.sequenzeLunghezzaMaggioreDiUnoConSoloMissplaced" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mainModule" />
+      <module name="module name" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MastermindTest" />
       <option name="METHOD_NAME" value="sequenzeLunghezzaMaggioreDiUnoConSoloMissplaced" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="module name" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="module name" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,5 +115,16 @@
       <updated>1631105460303</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
