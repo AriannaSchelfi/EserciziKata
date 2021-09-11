@@ -17,14 +17,13 @@ class Mastermind {
     }
 
     private fun verifiyMissplaced(guess: List<String>, i: Int, secret: List<String>) {
-        if ((guess[i] in secret) && guess[i] != secret[i]) {
-            numberMisplaced++
-        }
+        val containsColor = guess[i] in secret
+        val colorInDifferentPosition = guess[i] != secret[i]
+        if (containsColor && colorInDifferentPosition) numberMisplaced++
     }
 
     private fun verifyWellplaced(guess: List<String>, i: Int, secret: List<String>) {
-        if (guess[i] == secret[i]) {
-            numberWellPlaced++
-        }
+        val isSameColorAndPosition = guess[i] == secret[i]
+        if (isSameColorAndPosition) numberWellPlaced++
     }
 }
