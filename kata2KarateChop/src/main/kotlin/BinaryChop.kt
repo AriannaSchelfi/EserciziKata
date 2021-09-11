@@ -1,24 +1,9 @@
 //http://codekata.com/kata/kata02-karate-chop/
 class BinaryChop {
 
-    fun binarySearch(number : Int, orderedArray : IntArray, start :Int = 0) : Int{
+    fun binarySearch(element: Int, orderedArray: IntArray): Int {
+        val lista: MutableList<Int> = orderedArray.toMutableList()
 
-        if (orderedArray.isNotEmpty()){
-            val middle : Int= if(orderedArray.size%2 ==0){
-                orderedArray.size /2
-            }else{
-                (orderedArray.size+1)/2
-            }
-
-            return if (orderedArray[middle-1] == number) {
-                start+middle-1;
-            } else if (orderedArray[middle-1] > number) {
-                binarySearch(number, orderedArray.copyOfRange(0, middle-1), start)
-            } else {
-                binarySearch(number, orderedArray.copyOfRange(middle, orderedArray.size), start+middle)
-            }
-        }
-        return -1
+        return lista.indexOf(element)
     }
-
 }

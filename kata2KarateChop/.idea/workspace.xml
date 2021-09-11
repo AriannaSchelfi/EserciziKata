@@ -51,7 +51,7 @@
   </component>
   <component name="RunManager" selected="JUnit.BinaryChopTest">
     <configuration name="BinaryChopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mainModule" />
+      <module name="module name" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BinaryChopTest" />
       <option name="TEST_OBJECT" value="class" />
@@ -60,7 +60,7 @@
       </method>
     </configuration>
     <configuration name="BinaryChopTest.arrayConUnElementoNonPresente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mainModule" />
+      <module name="module name" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BinaryChopTest" />
       <option name="METHOD_NAME" value="arrayConUnElementoNonPresente" />
@@ -70,7 +70,7 @@
       </method>
     </configuration>
     <configuration name="BinaryChopTest.arrayLunghezzaDispariElementoPresente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mainModule" />
+      <module name="module name" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BinaryChopTest" />
       <option name="METHOD_NAME" value="arrayLunghezzaDispariElementoPresente" />
@@ -80,7 +80,7 @@
       </method>
     </configuration>
     <configuration name="BinaryChopTest.arrayLunghezzaPariElementoNonPresente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mainModule" />
+      <module name="module name" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BinaryChopTest" />
       <option name="METHOD_NAME" value="arrayLunghezzaPariElementoNonPresente" />
@@ -90,7 +90,7 @@
       </method>
     </configuration>
     <configuration name="BinaryChopTest.arrayLunghezzaPariElementoPresente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mainModule" />
+      <module name="module name" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BinaryChopTest" />
       <option name="METHOD_NAME" value="arrayLunghezzaPariElementoPresente" />
@@ -99,13 +99,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="module name" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="module name" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BinaryChopTest" />
+        <item itemvalue="JUnit.BinaryChopTest.arrayConUnElementoNonPresente" />
         <item itemvalue="JUnit.BinaryChopTest.arrayLunghezzaDispariElementoPresente" />
         <item itemvalue="JUnit.BinaryChopTest.arrayLunghezzaPariElementoNonPresente" />
         <item itemvalue="JUnit.BinaryChopTest.arrayLunghezzaPariElementoPresente" />
-        <item itemvalue="JUnit.BinaryChopTest.arrayConUnElementoNonPresente" />
       </list>
     </recent_temporary>
   </component>
